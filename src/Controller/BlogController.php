@@ -64,4 +64,9 @@ class BlogController extends AbstractController
             // 'posts' => $posts
         ]); 
     }
+
+    public function show_month()
+    {
+        return $this->render('show_month.html.twig');
+    }
 } 

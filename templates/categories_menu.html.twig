@@ -1,7 +1,7 @@
 <ul>
     {% for category in categories %}
     <li>
-        <a href="{{ path('blog_category_show', { id: category.id }) }}">
+        <a href="{{ path('blog_category_show', { month: category.id }) }}">
             {{ category.name }}
         </a>
     </li>

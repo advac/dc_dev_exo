@@ -1,0 +1,11 @@
+Menu par mois
+<ul>
+    {% for month in months %}
+        <li>        
+            <a href="{{ path('blog_month_show', { id: category.id }) }}">
+            {{ category.name }}
+            </a>
+            {{ date('2012-' ~ month.month ~ '-01')|date('M') }} {{ month.year }}
+        </li>
+    {% endfor %}
+</ul>

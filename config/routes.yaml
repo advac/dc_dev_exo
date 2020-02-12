@@ -8,4 +8,8 @@ blog_show:
 
 blog_category_show:
     path: /blog/categories/{id}
-    controller: App\Controller\BlogController::show_category
+    controller: App\Controller\BlogController::
+    
+blog_month_show:
+    path: /blog/month
+    controller: App\Controller\BlogController::show_month
